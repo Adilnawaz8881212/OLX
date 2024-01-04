@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import sklearn
-st.title('Car Price Predictor Faraz')
+st.title('Car Price Predictor')
 df = pickle.load(open('OLX_data_frame.pkl', 'rb'))
 pipe = pickle.load(open('pipe (2).pkl','rb'))
 company=st.selectbox('Company Name',df['Make'].unique())
